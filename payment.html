@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pay_form</title>
+    <link rel="stylesheet" href="paydec.css">
+</head>
+<body>
+    <div class="container">
+    <form action=""><!--no server loation-->
+        <h1 class="main_heading">Payment form</h1>
+        <h2>Contact information</h2>
+        <h3>Required fields are represented by *</h3>
+        <p>Name*: <input type="text" name="name" required></p>
+        <fieldset>
+            <legend class="geyzer">   Gender   </legend>
+        <p>
+            
+            Male* <input type="radio" name="gender" id="anymale" required><!--name cz browser to server-->
+            Female* <input type="radio" name="gender" id="anyfemale" required><!--gender cz only one ip-->
+        </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="100" rows="7"></textarea></p>
+        <p>Email: *<input type="email" name="email" id="email" required></p>
+        <p>pincode: *<input type="number" name="pincode" id="pincode" required></p> 
+        <hr>
+        <h2>Payment information</h2>
+        <p>Card type :<!--select option -->
+            <select name="card_type" id="card_type">
+                <option value="">--Select a Card type--</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Mastercard">Mastercard</option>
+            </select>
+        </p>  
+        <p>
+            Card number<input type="number" name="card_number" id="card_number">
+        </p>
+        <p>
+            Expiration Date:* <input type="date" name="exp_date" id="exp_date" required>
+        </p>
+        <p>
+            CVV* <input type="password" name="cvv" id="cvv" required>
+        </p>
+        <input type="submit" value="Pay now :">
+    </form>
+</div>
+</body>
+</html>
